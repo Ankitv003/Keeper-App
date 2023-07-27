@@ -52,6 +52,7 @@ footer p {
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
+  word-wrap: break-word;
 }
 .note p {
   font-size: 1.1em;
@@ -104,4 +105,11 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  form.create-note {
+    width: 100%;
+    margin-top: 0;
+  }
 }
